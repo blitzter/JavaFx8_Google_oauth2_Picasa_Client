@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blitz.picasaclient.PicasaClientController">
+   <center>
+      <ScrollPane id="loginDialog" fx:id="loginDialog" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <Label fx:id="loggedInEmail" />
+          <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginButtonClicked" text="Login" />
+        </items>
+      </ToolBar>
+   </top>
+   <left>
+      <ListView  id="listAlbums" fx:id="listAlbums" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
